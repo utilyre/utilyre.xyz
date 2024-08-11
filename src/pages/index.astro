@@ -1,37 +1,38 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components'
 ---
 
 <Layout title="Amirabbas Fazelinia" description="Amirabbas Fazelinia's personal website.">
-	<main>
-		<h1>Amirabbas Fazelinia &lt;utilyre@gmail.com&gt;</h1>
+	<main class="bg-black text-white w-screen h-screen">
+		<div class="grid grid-cols-2 p-16 w-full gap-4">
+			<a
+				href="https://linkedin.com/in/utilyre"
+				class="flex items-center gap-2 p-2 bg-white text-black rounded-xl backdrop-blur-lg"
+			>
+				<Icon name="bi:linkedin" class="inline-block" /> in/utilyre
+			</a>
 
-		<h2>Social Media</h2>
+			<a
+				href="https://github.com/utilyre"
+				class="flex items-center gap-2 p-2 bg-white text-black rounded-xl backdrop-blur-lg"
+			>
+				<Icon name="bi:github" class="inline-block" /> @utilyre
+			</a>
 
-		<ul>
-			<li>LinkedIn: <a href="https://linkedin.com/in/utilyre">in/utilyre</a></li>
-			<li>GitHub: <a href="https://github.com/utilyre">utilyre</a></li>
-			<li>X: <a href="https://x.com/utilyre">@utilyre</a></li>
-		</ul>
+			<a
+				href="https://x.com/utilyre"
+				class="flex items-center gap-2 p-2 bg-white text-black rounded-xl backdrop-blur-lg"
+			>
+				<Icon name="bi:twitter-x" class="inline-block" /> @utilyre
+			</a>
 
-		<h2>Cryptography</h2>
-
-		<code>
-		<pre>
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-mDMEZpoc6RYJKwYBBAHaRw8BAQdAI/xv59IacSc/EOI/Fq0l/oV7AWQEnx8hrqSI
-qSO3j6S0J0FtaXJhYmJhcyBGYXplbGluaWEgPHV0aWx5cmVAZ21haWwuY29tPoiT
-BBMWCgA7FiEEqsYhvqcHUA7pTJD799VQfC86jaAFAmaaHOkCGwMFCwkIBwICIgIG
-FQoJCAsCBBYCAwECHgcCF4AACgkQ99VQfC86jaDerQD+Ma/CPb3pSWXkHHdw1nEB
-4iPGpTC9CjKlqxmJrNEu9IoA/j9QLpQ5PmlnJsI5RqKsmmWoHijknYu9KsJ1iDcV
-TnEHuDgEZpoc6RIKKwYBBAGXVQEFAQEHQKLIF9MttewBtAjlG338hBpAv/eEpTVd
-iwvZ6m7F4FM9AwEIB4h4BBgWCgAgFiEEqsYhvqcHUA7pTJD799VQfC86jaAFAmaa
-HOkCGwwACgkQ99VQfC86jaDsGgD9FHwnNH8qX3iQpo14g5Z5ImGS2BkaJlOq0v3L
-U96yF+gBANI6NdAD0f4kaMdoZommZ1pRzxeVQZOLdMWQNIrsGW4M
-=86Tu
------END PGP PUBLIC KEY BLOCK-----
-		</pre>
-		</code>
+			<a
+				href="https://instagram.com/utilyree"
+				class="flex items-center gap-2 p-2 bg-white text-black rounded-xl backdrop-blur-lg"
+			>
+				<Icon name="bi:instagram" class="inline-block" /> @utilyree
+			</a>
+		</div>
 	</main>
 </Layout>
