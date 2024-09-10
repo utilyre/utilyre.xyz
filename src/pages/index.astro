@@ -3,51 +3,25 @@ import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon/components'
 ---
 
-<Layout title="Amirabbas Fazelinia" description="Amirabbas Fazelinia's personal website.">
-	<main class="bg-black text-white w-screen h-screen py-8 flex flex-col items-center">
-		<h1 class="text-center font-bold text-2xl">Amirabbas Fazelinia</h1>
+<Layout title="Amirabbas's Website" description="Amirabbas Fazelinia's personal website.">
+	<div class="w-screen h-screen bg-gradient-to-b from-gray-100 via-gray-300 to-gray-500 flex justify-center items-center flex-col gap-10">
+	  <div class="flex bg-gray-800 rounded-full px-8 py-4 text-white gap-4">
+	    <a href="mailto:utilyre@gmail.com" class="flex"><Icon name="mdi:email" class="inline-block text-xl" /></a>
+	    <a href="https://linkedin.com/in/utilyre" class="flex"><Icon name="mdi:linkedin" class="inline-block text-xl" /></a>
+	    <a href="https://github.com/utilyre" class="flex"><Icon name="mdi:github" class="inline-block text-xl" /></a>
+	    <a href="https://x.com/utilyre" class="flex"><Icon name="mdi:twitter" class="inline-block text-xl" /></a>
+	  </div>
+  
+	  <div class="space-y-2 w-2/3 md:w-fit">
+	    <h1 class="font-extrabold text-5xl bg-gradient-to-tr bg-clip-text text-transparent from-blue-500 via-indigo-500 to-purple-500">Hi, it's Amirabbas</h1>
+	    <p class="text-gray-700 text-sm">A computer engineering student.</p>
+	  </div>
 
-		<div class="h-4"></div>
-
-		<div class="grid grid-cols-2 px-16 w-full md:w-2/3 lg:w-1/2 xl:w-2/5 gap-4">
-			<a
-				href="mailto:utilyre@gmail.com"
-				class="col-span-2 flex justify-center items-center gap-2 p-2 bg-white text-black rounded-xl backdrop-blur-lg"
-			>
-				utilyre@gmail.com
-			</a>
-
-			<a
-				href="https://linkedin.com/in/utilyre"
-				class="flex justify-center items-center gap-2 py-2 bg-white text-black rounded-xl backdrop-blur-lg"
-			>
-				<Icon name="bi:linkedin" class="inline-block" />
-				<span>in/utilyre</span>
-			</a>
-
-			<a
-				href="https://github.com/utilyre"
-				class="flex justify-center items-center gap-2 py-2 bg-white text-black rounded-xl backdrop-blur-lg"
-			>
-				<Icon name="bi:github" class="inline-block" />
-				<span>utilyre</span>
-			</a>
-
-			<a
-				href="https://x.com/utilyre"
-				class="flex justify-center items-center gap-2 py-2 bg-white text-black rounded-xl backdrop-blur-lg"
-			>
-				<Icon name="bi:twitter-x" class="inline-block" />
-				<span>@utilyre</span>
-			</a>
-
-			<a
-				href="https://instagram.com/utilyree"
-				class="flex justify-center items-center gap-2 py-2 bg-white text-black rounded-xl backdrop-blur-lg"
-			>
-				<Icon name="bi:instagram" class="inline-block" />
-				<span>@utilyree</span>
-			</a>
-		</div>
-	</main>
+	  <div class="bg-gray-600 overflow-hidden rounded-md h-18 flex flex-col justify-between w-3/4 md:w-1/2">
+	    <p class="text-sm px-2 py-1 text-gray-300">bash</p>
+	    <code class="bg-gray-800 text-white p-4 w-full overflow-x-scroll flex text-nowrap">
+	      gpg --recv-keys AAC621BEA707500EE94C90FBF7D5507C2F3A8DA0
+	    </code>
+	  </div>
+	</div>
 </Layout>

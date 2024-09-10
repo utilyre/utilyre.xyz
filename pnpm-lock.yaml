@@ -17,9 +17,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.13.3(@types/node@22.2.0)(typescript@5.5.4))(tailwindcss@3.4.9)
-      '@iconify-json/bi':
-        specifier: ^1.1.24
-        version: 1.1.24
+      '@iconify-json/mdi':
+        specifier: ^1.2.0
+        version: 1.2.0
       astro:
         specifier: ^4.13.1
         version: 4.13.3(@types/node@22.2.0)(typescript@5.5.4)
@@ -343,8 +343,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@iconify-json/bi@1.1.24':
-    resolution: {integrity: sha512-K8U7s6Hm0Y06q9z41AGLLe+zuwZ7t8LNLG0EUkzZMvUMoZwZosmzFWlp2ajit1MGX+ealu4IKkMioKgjVNQ5ZQ==}
+  '@iconify-json/mdi@1.2.0':
+    resolution: {integrity: sha512-E9/3l5Syg3wfuarorFodhn4s8YorxhH3U3U20LaNBNiqw1kFNIDWhF6HymuzAD35k7RH0OBasJ+ZUyFtVVV6eg==}
 
   '@iconify/tools@3.0.7':
     resolution: {integrity: sha512-DxfhFLMnooS34dHelpGUnnYrxLZHs0czC1CgrBhAbuL8ddVzBb2VEQm8kh9qGh7A34qeXAB5iSHH3A72rAaFrg==}
@@ -2625,7 +2625,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@iconify-json/bi@1.1.24':
+  '@iconify-json/mdi@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
 
