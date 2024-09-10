@@ -1,0 +1,16 @@
+---
+const { type, className } = Astro.props;
+---
+
+<section
+  class=`bg-gray-600 overflow-hidden rounded-md flex flex-col justify-between ${className}`
+>
+  <p class="text-sm px-2 py-1 text-gray-300">{type}</p>
+
+  <code
+    class="bg-gray-800 text-white p-4 w-full overflow-x-scroll flex text-nowrap"
+  >
+    <slot />
+  </code>
+</section>
+
