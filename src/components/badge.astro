@@ -1,10 +1,10 @@
 ---
 import { Icon } from 'astro-icon/components'
 
-const { icon, href } = Astro.props;
+const { title, icon, href } = Astro.props;
 ---
 
-<a {href} class="flex">
+<a {href} {title} class="flex">
   <Icon name={icon} class="inline-block text-xl glow" />
 </a>
 
