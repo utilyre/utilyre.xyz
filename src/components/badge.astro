@@ -5,5 +5,11 @@ const { icon, href } = Astro.props;
 ---
 
 <a {href} class="flex">
-  <Icon name={icon} class="inline-block text-xl drop-shadow-white" />
+  <Icon name={icon} class="inline-block text-xl glow" />
 </a>
+
+<style>
+.glow {
+  filter: drop-shadow(0 2px 8px rgb(255 255 255 / 0.25));
+}
+</style>
