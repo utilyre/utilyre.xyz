@@ -4,8 +4,8 @@ import { Icon } from 'astro-icon/components'
 const { title, icon, href } = Astro.props;
 ---
 
-<a {href} {title} class="flex">
-  <Icon name={icon} class="inline-block text-xl glow" />
+<a {href} class="flex">
+  <Icon name={icon} {title} class="inline-block text-xl glow" />
 </a>
 
 <style>
