@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 
 const { type, className } = Astro.props;
 ---
@@ -7,7 +7,7 @@ const { type, className } = Astro.props;
 <section
   class=`bg-black border-2 border-black overflow-hidden rounded-md flex flex-col justify-between ${className}`
 >
-  <div class="px-2 py-1 flex justify-between items-center">
+  <div class="flex items-center justify-between px-2 py-1">
     <p class="text-sm text-gray-300">{type}</p>
 
     <button id="btn-copy">
@@ -17,17 +17,17 @@ const { type, className } = Astro.props;
 
   <code
     id="code"
-    class="bg-slate-900 text-white text-sm md:text-base p-4 w-full overflow-x-scroll flex text-nowrap"
+    class="flex w-full overflow-x-scroll text-nowrap bg-slate-900 p-4 text-sm text-white md:text-base"
   >
     <slot />
   </code>
 </section>
 
 <script>
-const btnCopy = document.getElementById("btn-copy");
-const code = document.getElementById("code");
+  const btnCopy = document.getElementById("btn-copy");
+  const code = document.getElementById("code");
 
-btnCopy!.onclick = () => {
-  navigator.clipboard.writeText(code!.innerText);
-};
+  btnCopy!.onclick = () => {
+    navigator.clipboard.writeText(code!.innerText);
+  };
 </script>

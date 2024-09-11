@@ -1,17 +1,16 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 
 const { title, icon, href } = Astro.props;
 ---
 
 <a {href} class="flex">
-  <Icon name={icon} {title} class="inline-block text-xl glow" />
+  <Icon name={icon} {title} class="glow inline-block text-xl" />
 </a>
 
 <style>
-.glow {
-  filter:
-    drop-shadow(-1px -4px 8px rgb(255 255 255 / 0.5))
-    drop-shadow(2px 6px 16px rgb(255 255 255 / 0.8));
-}
+  .glow {
+    filter: drop-shadow(-1px -4px 8px rgb(255 255 255 / 0.5))
+      drop-shadow(2px 6px 16px rgb(255 255 255 / 0.8));
+  }
 </style>

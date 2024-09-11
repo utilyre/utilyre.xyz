@@ -1,49 +1,50 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-import Badge from '../components/badge.astro'
-import Code from '../components/code.astro'
+import Badge from "../components/badge.astro";
+import Code from "../components/code.astro";
 ---
 
 <Layout title="Utilyre" description="Amirabbas Fazelinia's personal website.">
-	<main
-		class="w-screen h-screen flex justify-center items-center flex-col gap-14"
-	>
-	  <nav
-			class="flex bg-black rounded-full px-8 py-4 text-white gap-4 relative justify-center items-center before:bg-gradient-to-tr before:from-blue-500 before:via-yellow-500 before:to-purple-500 before:w-[calc(100%+4px)] before:h-[calc(100%+4px)] before:rounded-full before:absolute before:-z-10"
-			>
-		  <Badge title="Email" href="mailto:utilyre@gmail.com" icon="mdi:email" />
-		  <Badge
-				title="LinkedIn"
-				href="https://linkedin.com/in/utilyre"
-				icon="mdi:linkedin"
-			/>
-		  <Badge
-				title="GitHub"
-				href="https://github.com/utilyre"
-				icon="mdi:github"
-			/>
-		  <Badge title="X" href="https://x.com/utilyre" icon="mdi:twitter" />
-	  </nav>
+  <main
+    class="flex h-screen w-screen flex-col items-center justify-center gap-14"
+  >
+    <nav
+      class="relative flex items-center justify-center gap-4 rounded-full bg-black px-8 py-4 text-white before:absolute before:-z-10 before:h-[calc(100%+4px)] before:w-[calc(100%+4px)] before:rounded-full before:bg-gradient-to-tr before:from-blue-500 before:via-yellow-500 before:to-purple-500"
+    >
+      <Badge title="Email" href="mailto:utilyre@gmail.com" icon="mdi:email" />
+      <Badge
+        title="LinkedIn"
+        href="https://linkedin.com/in/utilyre"
+        icon="mdi:linkedin"
+      />
+      <Badge
+        title="GitHub"
+        href="https://github.com/utilyre"
+        icon="mdi:github"
+      />
+      <Badge title="X" href="https://x.com/utilyre" icon="mdi:twitter" />
+    </nav>
 
-	  <section class="space-y-2 w-2/3 md:w-fit">
-	    <h1
-				class="w-fit font-extrabold text-3xl md:text-5xl bg-gradient-to-tr bg-clip-text text-transparent from-blue-500 to-purple-500 glow"
-			>
-				Hi, it's Amirabbas
-			</h1>
+    <section class="w-2/3 space-y-2 md:w-fit">
+      <h1
+        class="glow w-fit bg-gradient-to-tr from-blue-500 to-purple-500 bg-clip-text text-3xl font-extrabold text-transparent md:text-5xl"
+      >
+        Hi, it's Amirabbas
+      </h1>
 
-	    <p class="text-gray-700 text-sm">A computer engineering student.</p>
-	  </section>
+      <p class="text-sm text-gray-700">A computer engineering student.</p>
+    </section>
 
-		<Code type="bash" className="w-3/4 h-18 md:w-1/2">
+    <Code type="bash" className="h-18 w-3/4 md:w-1/2">
       gpg --recv-keys AAC621BEA707500EE94C90FBF7D5507C2F3A8DA0
-		</Code>
-	</div>
+    </Code>
+  </main>
 </Layout>
 
 <style>
-.glow {
-	filter: drop-shadow(-35px 10px 25px #a855f7) drop-shadow(35px -10px 25px #3b82f6);
-}
+  .glow {
+    filter: drop-shadow(-35px 10px 25px #a855f7)
+      drop-shadow(35px -10px 25px #3b82f6);
+  }
 </style>
