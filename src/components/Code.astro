@@ -11,13 +11,13 @@ const { type, className } = Astro.props;
     <p class="text-sm text-gray-300">{type}</p>
 
     <button id="btn-copy">
-      <Icon name="mdi:content-copy" title="Copy" class="text-sm" />
+      <Icon name="mdi:content-copy" title="Copy" class="text-sm text-gray-300" />
     </button>
   </div>
 
   <code
     id="code"
-    class="flex w-full overflow-x-scroll text-nowrap bg-slate-900 p-4 text-sm text-white md:text-base"
+    class="flex w-full overflow-x-scroll text-nowrap bg-slate-900 p-4 text-sm text-gray-200 md:text-base"
   >
     <slot />
   </code>
