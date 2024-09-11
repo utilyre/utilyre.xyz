@@ -7,9 +7,11 @@ import Code from '../components/code.astro'
 
 <Layout title="Utilyre" description="Amirabbas Fazelinia's personal website.">
 	<main
-		class="w-screen h-screen bg-gradient-to-b from-gray-100 via-gray-300 to-gray-500 flex justify-center items-center flex-col gap-14"
+		class="w-screen h-screen flex justify-center items-center flex-col gap-14"
 	>
-	  <nav class="flex bg-black rounded-full px-8 py-4 text-white gap-4">
+	  <nav class="flex bg-black rounded-full px-8 py-4 text-white gap-4 relative justify-center items-center">
+			<div class="bg-gradient-to-tr from-blue-500 via-yellow-500 to-purple-500 w-[calc(100%+4px)] h-[calc(100%+4px)] rounded-full absolute -z-10"></div>
+
 		  <Badge title="Email" href="mailto:utilyre@gmail.com" icon="mdi:email" />
 		  <Badge
 				title="LinkedIn"
