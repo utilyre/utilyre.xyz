@@ -5,6 +5,6 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.utilyre.xyz",
+  site: "https://utilyre.xyz",
   integrations: [tailwind(), icon()],
 });
